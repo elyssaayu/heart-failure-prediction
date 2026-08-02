@@ -11,12 +11,18 @@ This project implements a complete data analysis pipeline analyzing cardiovascul
 * **Machine Learning:** Scikit-Learn (`Random Forest`, 'Logistic Regression', ‘Local Outlier Factor’)
 
 ## 📊 Key Findings & Visualizations
-1. **Statistical Significance:** A two-sample t-test revealed that patients with heart disease have a **statistically significant lower maximum heart rate (MaxHR)** ($p < 0.005$) compared to healthy controls. Interestingly, Cholesterol and Resting Blood Pressure were found to have no statistically significant difference between heart disease patients and healthy controls.
+1. **Statistical Significance:** A two-sample t-test revealed that patients with heart disease have a **statistically significant lower maximum heart rate (MaxHR)** ($p < 0.005$) compared to healthy controls.
 2. **Predictive Modeling:** The Random Forest classification model achieved **~91% accuracy** in identifying heart disease risk based on routine clinical metrics.
-3. **Feature Importance:** The Random Forest model also found that SlopeUp was the greatest classifier of heart disease, followed by MaxHR and OldPeak.
-4. **Anomaly Detection:** The Local Outlier Factor model found that **~74% of anomalous profiles** belonged to heart disease patients, showing that physical extremity strongly correlates with actual cardiac pathology.
+<img width="775" height="640" alt="confusion matrix" src="https://github.com/user-attachments/assets/74247c44-2917-4630-96db-91d7cee0eed6" />
 
-📄 Download or view the detailed data analysis pipeline in [Project Report (PDF)](Heart Failure Prediction Report.pdf)
+3. **Feature Importance:** The Random Forest model also found that SlopeUp was the greatest classifier of heart disease, followed by MaxHR and OldPeak.
+ <img width="1060" height="580" alt="feature importance" src="https://github.com/user-attachments/assets/3257723a-a981-4d06-b9b2-1db58760a230" />
+
+4. **Diagnostic Concordance:** The Local Outlier Factor model found that **~74% of anomalous profiles** belonged to heart disease patients, showing that physical extremity strongly correlates with actual cardiac pathology.
+
+
+
+📄 Download or view the detailed data analysis pipeline in [Heart Failure Prediction Report](Heart%20Failure%20Prediction%20Report.pdf)
 
 ## 🚀 How to Run
 1. Clone repository: `git clone https://github.com/elyssaayu/heart-failure-prediction.git`
